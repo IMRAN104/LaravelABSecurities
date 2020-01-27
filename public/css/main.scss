@@ -1,0 +1,328 @@
+$primary-color: #ff1403;
+$secondary-color: #EDEDED;
+$primary-text-color: #fe1616;
+$primary-font-size: 10px;
+$primary-font-family : "Lato";
+
+
+html,body{
+    overflow-x: hidden;
+    font-size: $primary-font-size;
+    font-family: $primary-font-family, monospace;
+}
+
+.i-nav-bar{
+    justify-content: center;
+
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    letter-spacing: 0.04rem;
+    background-color: #474747;
+}
+
+.navbar-nav .nav-link{
+    color: $secondary-color !important; 
+    font-size: 1.35rem;
+}
+
+.nav-item{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+@media screen and (min-width: 768px){
+    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+        display: block;
+    }
+    .dropdown-menu{
+        margin-top: 0;
+    }
+    .dropdown-toggle{
+        margin-bottom: 2px;
+    }
+    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+        margin-bottom: 0;
+    }
+}
+
+.dropdown-menu{
+    font-size: 1.25rem;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown-item:hover{
+    background-color: $primary-color;
+    color: white;
+}
+
+.ticker-section--logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ticker-section--ticker{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.marquee {
+  width: 90%;
+  overflow: hidden;
+}
+
+.ticker-main-div {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 10px;
+}
+
+.ticker--item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ticker--item__up {
+    color: green;
+}
+
+.ticker--item__down {
+    color: red;
+}
+
+.ticker--item__normal {
+    color: blue;
+}
+.ticker--control--button{
+    background-color: $secondary-color; 
+    color: $primary-color;
+}
+
+
+.services-section-div{
+    padding: 55px 0px;
+}
+.services-section-header{
+    text-align: center;
+    padding: 50px 0px 70px 0px;
+    .services-section-header-text{
+        font-size: 2.6rem;
+        color: $primary-color;
+        border-radius: 4px;
+    }
+}
+.service-card-column{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.service-card-div{
+    width: 220px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: $secondary-color;
+}
+.service-img-div{
+    position: absolute;
+    top: -30px;
+    left: 60px;
+}
+.service-img{
+    border-radius: 50%;
+    border: 5px solid $primary-color;
+    width: 100px;
+    height: 100px;;
+}
+.service-card-header{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 80px;
+    text-align: center;
+}
+.service-card-details{
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 10px 5px 10px;
+}
+
+.service-card-button-div{
+    padding-top: 15px;
+    text-align: center;
+}
+.service-card-button{
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: 1.2rem;
+}
+
+.links-section-div{
+    padding: 0px;
+}
+.links-section-header{
+    text-align: center;
+    padding: 50px 0px;
+    .links-section-header-text{
+        font-size: 2.6rem;
+        color: $primary-color;
+        border-radius: 4px;
+    }
+}
+.imp--links--div {
+    padding-bottom: 10rem;
+
+    .imp--links--col {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        margin-bottom: 3rem;
+
+        .imp--single-link--div {
+            width: 100px;
+            height: 100px;
+            background-color: $secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.3);
+            padding: 5px;
+            
+            i{
+                color: $primary-color;
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            a{
+                color: black;
+                text-align: center;
+                font-size: 1.3rem;
+            }
+            
+            &:hover, &:focus, &:active {
+                i,a{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.hvr-bounce-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primary-color;
+        transform: scaleY(0);
+        transform-origin: 50% 0;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+
+    
+
+    &:hover:before, &:focus:before, &:active:before {
+        transform: scaleY(1);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+}
+.branches-section-header{
+    text-align: center;
+    padding: 30px 0px;
+    .branches-section-header-text{
+        font-size: 2.6rem;
+        color: $primary-color;
+        border-radius: 4px;
+    }
+}
+.branches-section-row {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.branches-section-col {
+    text-align: center;
+    font-size: 13px;
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    color: #4c4c4c;
+    p {
+        margin: 0;
+    }
+}
+.contact-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    
+}
+.contact-div-header{
+    color: $primary-color;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Lato";
+}
+.contact-div-subheader{
+    color: grey;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.contact-us-card-div{
+    background-color: darkcyan;
+
+}
+.contact-section-row {
+    margin-top: 35px;
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contact-section-col {
+    text-align: center;
+    font-size: 13px;
+    width: 240px;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.contact-us-card-icon{
+    color: $secondary-color;
+}
+// Section Footer
+.custom-footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
