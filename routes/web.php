@@ -17,5 +17,7 @@
 
 Route::get('/', 'DefaultController@index');
 Route::get('/notices','DefaultController@notices');
+Route::get('/downloads','DefaultController@downloads');
+
 
 

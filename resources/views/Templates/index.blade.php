@@ -355,51 +355,54 @@
 
 
 @push('scripts')
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".dropdown, .btn-group").hover(function(){
-            var dropdownMenu = $(this).children(".dropdown-menu");
-            if(dropdownMenu.is(":visible")){
-                dropdownMenu.parent().toggleClass("open");
-            }
+    <script src="https://kit.fontawesome.com/3e5b53fd9c.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/jquery.pause.js') }}"></script>
+    <script src="{{ asset('js/jquery.marquee.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".dropdown, .btn-group").hover(function(){
+                var dropdownMenu = $(this).children(".dropdown-menu");
+                if(dropdownMenu.is(":visible")){
+                    dropdownMenu.parent().toggleClass("open");
+                }
+            });
+        });     
+        
+        var mq = $('.marquee').marquee({
+            speed: 120,
+            pauseOnHover: true,
+            duplicated: true,
+            gap: 0,
         });
-    });     
-    
-    var mq = $('.marquee').marquee({
-        speed: 120,
-        pauseOnHover: true,
-        duplicated: true,
-        gap: 0,
-    });
-    
-    
-    function togglemarquee(){
-        mq.marquee('toggle')
-    }
+        
+        
+        function togglemarquee(){
+            mq.marquee('toggle')
+        }
 
-    $('#ticker-rb').click(function() {
-        mq.marquee('destroy');
-        mq = $('.marquee').marquee({
-        speed: 120,
-        pauseOnHover: true,
-        duplicated: true,
-        gap: 0,
-        direction: 'right'
-        });
-    })
+        $('#ticker-rb').click(function() {
+            mq.marquee('destroy');
+            mq = $('.marquee').marquee({
+            speed: 120,
+            pauseOnHover: true,
+            duplicated: true,
+            gap: 0,
+            direction: 'right'
+            });
+        })
 
-    $('#ticker-lb').click(function () {
-        mq.marquee('destroy');
-        mq = $('.marquee').marquee({
-        speed: 120,
-        pauseOnHover: true,
-        duplicated: true,
-        gap: 0,
-        direction: 'left'
-        });
-    })
+        $('#ticker-lb').click(function () {
+            mq.marquee('destroy');
+            mq = $('.marquee').marquee({
+            speed: 120,
+            pauseOnHover: true,
+            duplicated: true,
+            gap: 0,
+            direction: 'left'
+            });
+        })
 
-</script>
+    </script>
 @endpush
 
 
