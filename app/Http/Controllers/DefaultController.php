@@ -13,4 +13,10 @@ class DefaultController extends Controller
     public function notices(){
         return view('');
     }
+    public function branches(){
+        return view('Templates/branches');
+    }
+    public function downloads(){
+        return view('');
+    }
 }

@@ -1,7 +1,7 @@
 @extends('Templates.base')
 
 @section('title')
-    index
+    Home
 @endsection
 @push('styles')
     {{-- <link href="{{ asset('sass/app.css') }}" rel="stylesheet"> --}}
