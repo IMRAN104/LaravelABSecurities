@@ -4,7 +4,7 @@
     Home
 @endsection
 @push('styles')
-    {{-- <link href="{{ asset('sass/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 @endpush
 
 @section('body')
@@ -355,7 +355,6 @@
 
 
 @push('scripts')
-    <script src="https://kit.fontawesome.com/3e5b53fd9c.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/jquery.pause.js') }}"></script>
     <script src="{{ asset('js/jquery.marquee.min.js') }}"></script>
     <script type="text/javascript">

@@ -1,62 +1,4 @@
-$primary-color: #ff1403;
-$secondary-color: #EDEDED;
-$primary-text-color: #fe1616;
-$primary-font-size: 10px;
-$primary-font-family : "Lato";
-
-
-html,body{
-    overflow-x: hidden;
-    font-size: $primary-font-size;
-    font-family: $primary-font-family, monospace;
-}
-
-.i-nav-bar{
-    justify-content: center;
-
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
-    letter-spacing: 0.04rem;
-    background-color: #474747;
-}
-
-.navbar-nav .nav-link{
-    color: $secondary-color !important; 
-    font-size: 1.35rem;
-}
-
-.nav-item{
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
-@media screen and (min-width: 768px){
-    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
-        display: block;
-    }
-    .dropdown-menu{
-        margin-top: 0;
-    }
-    .dropdown-toggle{
-        margin-bottom: 2px;
-    }
-    .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
-        margin-bottom: 0;
-    }
-}
-
-.dropdown-menu{
-    font-size: 1.25rem;
-}
-
-.dropdown-toggle::after{
-    display: none;
-}
-
-.dropdown-item:hover{
-    background-color: $primary-color;
-    color: white;
-}
+@import 'color.scss';
 
 .ticker-section--logo{
     display: flex;
@@ -319,17 +261,4 @@ html,body{
 
 .contact-us-card-icon{
     color: $secondary-color;
-}
-// Section Footer
-#footer-section{
-    // added later to fix the footer to bottom
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-}
-.custom-footer{
-    background-color: black;
-    text-align: center;
-    padding: 20px;
 }
