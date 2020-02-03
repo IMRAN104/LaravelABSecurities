@@ -153,9 +153,68 @@
     <section id="non-footer">
         @yield('body')
     </section>
-    <section id="footer-section">
+    {{-- <section id="footer-section">
         <div class="custom-footer">
             <p>Powered by<span><a href="http://www.esecuresoftbd.com" target="_blank">eSecureSoft Technologies Ltd.</a></span></p>
+        </div>
+    </section> --}}
+    <section id="footer-section" style="margin-top: 50px;">
+        <div class="row" style="background-color: black; font-size: 2rem;padding-top: 50px">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 ml-auto mr-auto" style="width: 200px; height: 200px; text-align: center;">
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">DSE Top 20 Shares</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/top_ten_gainer.php" target="_blank">Top 10 Gainers</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/top_ten_loser.php" target="_blank">Top 10 Losers</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/dseX_share.php" target="_blank">DSEX Share</a>
+                </p>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4" style="width: 200px; height: 200px;text-align: center; font-size: 2rem;">
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">Contact Us</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">Our Services</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">About Us</a>
+                </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4" style="width: 200px; height: 200px;text-align: center; font-size: 2rem; color: white;">
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">Contact Us</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">Our Services</a>
+                </p>
+                <p>
+                    <a href="https://dsebd.org/top_20_share.php" target="_blank">About Us</a>
+                </p>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col pb-5" style="text-align: center; background-color: black">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-3x" style="color: cyan;padding: 10px;"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-3x" style="color: cyan; padding: 10px"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-3x" style="color: cyan; padding: 10px;"></i></a>
+
+            </div>
+        </div>
+        <div class="row" style="background-color: black;justify-content: center; color: white;font-weight: 200">
+            <p>WW Tower (Level – 6), 68</p>
+            <p>Motijheel C/A, Dhaka – 1000</p>
+        </div>
+        <div class="row" style="background-color: black;justify-content: center">
+            <p>AB Securities Limited &copy;All Rights Reserved, 2020</p>
+            <p>Powered by<span><a href="http://www.esecuresoftbd.com" target="_blank">eSecureSoft Technologies Ltd.</a></span></p>  
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
